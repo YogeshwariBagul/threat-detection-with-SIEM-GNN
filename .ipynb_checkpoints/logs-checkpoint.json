@@ -1,0 +1,1376 @@
+{
+    "took": 62,
+    "timed_out": false,
+    "_shards": {
+        "total": 2,
+        "successful": 2,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": {
+            "value": 10000,
+            "relation": "gte"
+        },
+        "max_score": 1.0,
+        "hits": [
+            {
+                "_index": ".ds-winlogbeat-8.17.4-2025.03.26-000001",
+                "_id": "dQ34GJYBZtu3qb7koTwh",
+                "_score": 1.0,
+                "_source": {
+                    "agent": {
+                        "name": "Rutu",
+                        "id": "3ad48d5f-fa93-4b64-86d7-42f3203fc5bc",
+                        "type": "winlogbeat",
+                        "ephemeral_id": "12ccbbb2-2910-4801-9e33-c06aa319b6e7",
+                        "version": "8.17.4"
+                    },
+                    "process": {
+                        "args": [
+                            "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+                            "--type=renderer",
+                            "--no-pre-read-main-dll",
+                            "--video-capture-use-gpu-memory-buffer",
+                            "--lang=en-GB",
+                            "--device-scale-factor=2",
+                            "--num-raster-threads=4",
+                            "--enable-main-frame-before-activation",
+                            "--renderer-client-id=53",
+                            "--time-ticks-at-unix-epoch=-1743262270035168",
+                            "--launch-time-ticks=913386807041",
+                            "--field-trial-handle=1888,i,9365809002119482789,10653373512648765991,262144",
+                            "--variations-seed-version=20250408-050123.787000",
+                            "--mojo-platform-channel-handle=7460",
+                            "/prefetch:1"
+                        ],
+                        "parent": {
+                            "args": [
+                                "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+                            ],
+                            "name": "chrome.exe",
+                            "pid": 22388,
+                            "args_count": 1,
+                            "entity_id": "{0c3d8327-f988-67f5-9353-000000001300}",
+                            "executable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+                            "command_line": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" "
+                        },
+                        "pe": {
+                            "file_version": "135.0.7049.42",
+                            "product": "Google Chrome",
+                            "description": "Google Chrome",
+                            "original_file_name": "chrome.exe",
+                            "company": "Google LLC"
+                        },
+                        "name": "chrome.exe",
+                        "pid": 13644,
+                        "working_directory": "C:\\Program Files\\Google\\Chrome\\Application\\135.0.7049.42\\",
+                        "args_count": 15,
+                        "entity_id": "{0c3d8327-0228-67f6-d354-000000001300}",
+                        "hash": {
+                            "sha256": "3ba7aac25de391864ac103f54354816376a79773f447166c64689de761eb9475"
+                        },
+                        "executable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+                        "command_line": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=renderer --no-pre-read-main-dll --video-capture-use-gpu-memory-buffer --lang=en-GB --device-scale-factor=2 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=53 --time-ticks-at-unix-epoch=-1743262270035168 --launch-time-ticks=913386807041 --field-trial-handle=1888,i,9365809002119482789,10653373512648765991,262144 --variations-seed-version=20250408-050123.787000 --mojo-platform-channel-handle=7460 /prefetch:1"
+                    },
+                    "@timestamp": "2025-04-09T05:14:16.843Z",
+                    "winlog": {
+                        "computer_name": "Rutu",
+                        "process": {
+                            "pid": 5768,
+                            "thread": {
+                                "id": 7676
+                            }
+                        },
+                        "channel": "Microsoft-Windows-Sysmon/Operational",
+                        "event_data": {
+                            "Company": "Google LLC",
+                            "Description": "Google Chrome",
+                            "LogonGuid": "{0c3d8327-f810-67f5-7aee-f00a00000000}",
+                            "TerminalSessionId": "8",
+                            "IntegrityLevel": "Low",
+                            "ParentUser": "Rutu\\bagul",
+                            "Product": "Google Chrome",
+                            "FileVersion": "135.0.7049.42",
+                            "LogonId": "0xaf0ee7a"
+                        },
+                        "opcode": "Info",
+                        "version": 5,
+                        "record_id": "63921",
+                        "task": "Process terminated (rule: ProcessTerminate)",
+                        "event_id": "1",
+                        "provider_guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+                        "api": "wineventlog",
+                        "provider_name": "Microsoft-Windows-Sysmon",
+                        "user": {
+                            "identifier": "S-1-5-18",
+                            "domain": "NT AUTHORITY",
+                            "name": "SYSTEM",
+                            "type": "User"
+                        }
+                    },
+                    "ecs": {
+                        "version": "8.17.0"
+                    },
+                    "related": {
+                        "user": [
+                            "bagul"
+                        ],
+                        "hash": [
+                            "3ba7aac25de391864ac103f54354816376a79773f447166c64689de761eb9475"
+                        ]
+                    },
+                    "log": {
+                        "level": "information"
+                    },
+                    "host": {
+                        "hostname": "Rutu",
+                        "os": {
+                            "build": "26100.3624",
+                            "kernel": "10.0.26100.3624 (WinBuild.160101.0800)",
+                            "name": "Windows 11 Home Single Language",
+                            "family": "windows",
+                            "type": "windows",
+                            "version": "10.0",
+                            "platform": "windows"
+                        },
+                        "ip": [
+                            "fe80::55f0:c932:6663:73ea",
+                            "169.254.164.58",
+                            "fe80::4ac:ff14:96d4:9df",
+                            "169.254.30.83",
+                            "fe80::3145:98c1:4f1c:6335",
+                            "169.254.50.69",
+                            "fe80::64e1:c8dd:5356:c175",
+                            "10.6.9.15",
+                            "fe80::c973:d583:c0f6:30dc",
+                            "192.168.137.1"
+                        ],
+                        "name": "rutu",
+                        "id": "0c3d8327-75c7-4af9-a536-dd6fdc236ef1",
+                        "mac": [
+                            "00-FF-EE-C8-47-CB",
+                            "30-89-4A-CC-0C-FE",
+                            "30-89-4A-CC-0C-FF",
+                            "32-89-4A-CC-0C-FE"
+                        ],
+                        "architecture": "x86_64"
+                    },
+                    "event": {
+                        "ingested": "2025-04-09T05:14:29.524535600Z",
+                        "code": "1",
+                        "provider": "Microsoft-Windows-Sysmon",
+                        "kind": "event",
+                        "created": "2025-04-09T05:14:19.329Z",
+                        "module": "sysmon",
+                        "action": "Process creation",
+                        "category": [
+                            "process"
+                        ],
+                        "type": [
+                            "start"
+                        ]
+                    },
+                    "message": "Process Create:\nRuleName: -\nUtcTime: 2025-04-09 05:14:16.843\nProcessGuid: {0c3d8327-0228-67f6-d354-000000001300}\nProcessId: 13644\nImage: C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\nFileVersion: 135.0.7049.42\nDescription: Google Chrome\nProduct: Google Chrome\nCompany: Google LLC\nOriginalFileName: chrome.exe\nCommandLine: \"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=renderer --no-pre-read-main-dll --video-capture-use-gpu-memory-buffer --lang=en-GB --device-scale-factor=2 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=53 --time-ticks-at-unix-epoch=-1743262270035168 --launch-time-ticks=913386807041 --field-trial-handle=1888,i,9365809002119482789,10653373512648765991,262144 --variations-seed-version=20250408-050123.787000 --mojo-platform-channel-handle=7460 /prefetch:1\nCurrentDirectory: C:\\Program Files\\Google\\Chrome\\Application\\135.0.7049.42\\\nUser: Rutu\\bagul\nLogonGuid: {0c3d8327-f810-67f5-7aee-f00a00000000}\nLogonId: 0xAF0EE7A\nTerminalSessionId: 8\nIntegrityLevel: Low\nHashes: SHA256=3BA7AAC25DE391864AC103F54354816376A79773F447166C64689DE761EB9475\nParentProcessGuid: {0c3d8327-f988-67f5-9353-000000001300}\nParentProcessId: 22388\nParentImage: C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\nParentCommandLine: \"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" \nParentUser: Rutu\\bagul",
+                    "user": {
+                        "domain": "Rutu",
+                        "name": "bagul",
+                        "id": "S-1-5-18"
+                    }
+                }
+            },
+            {
+                "_index": ".ds-winlogbeat-8.17.4-2025.03.26-000001",
+                "_id": "dg34GJYBZtu3qb7koTwh",
+                "_score": 1.0,
+                "_source": {
+                    "agent": {
+                        "name": "Rutu",
+                        "id": "3ad48d5f-fa93-4b64-86d7-42f3203fc5bc",
+                        "ephemeral_id": "12ccbbb2-2910-4801-9e33-c06aa319b6e7",
+                        "type": "winlogbeat",
+                        "version": "8.17.4"
+                    },
+                    "process": {
+                        "args": [
+                            "taskhostw.exe"
+                        ],
+                        "parent": {
+                            "args": [
+                                "C:\\WINDOWS\\system32\\svchost.exe",
+                                "-k",
+                                "netsvcs",
+                                "-p",
+                                "-s",
+                                "Schedule"
+                            ],
+                            "name": "svchost.exe",
+                            "pid": 2932,
+                            "args_count": 6,
+                            "entity_id": "{0c3d8327-125f-67e8-3500-000000001300}",
+                            "executable": "C:\\Windows\\System32\\svchost.exe",
+                            "command_line": "C:\\WINDOWS\\system32\\svchost.exe -k netsvcs -p -s Schedule"
+                        },
+                        "pe": {
+                            "file_version": "10.0.26100.3624 (WinBuild.160101.0800)",
+                            "product": "Microsoft\u00ae Windows\u00ae Operating System",
+                            "description": "Host Process for Windows Tasks",
+                            "original_file_name": "taskhostw.exe",
+                            "company": "Microsoft Corporation"
+                        },
+                        "name": "taskhostw.exe",
+                        "pid": 7900,
+                        "working_directory": "C:\\WINDOWS\\system32\\",
+                        "args_count": 1,
+                        "entity_id": "{0c3d8327-0229-67f6-d454-000000001300}",
+                        "hash": {
+                            "sha256": "c772a80788ff09dca0af997fe8449d81555b02399e4ab357213ecfac5501783f"
+                        },
+                        "executable": "C:\\Windows\\System32\\taskhostw.exe",
+                        "command_line": "taskhostw.exe"
+                    },
+                    "@timestamp": "2025-04-09T05:14:17.968Z",
+                    "winlog": {
+                        "computer_name": "Rutu",
+                        "process": {
+                            "pid": 5768,
+                            "thread": {
+                                "id": 7676
+                            }
+                        },
+                        "channel": "Microsoft-Windows-Sysmon/Operational",
+                        "event_data": {
+                            "Company": "Microsoft Corporation",
+                            "LogonGuid": "{0c3d8327-125e-67e8-e703-000000000000}",
+                            "Description": "Host Process for Windows Tasks",
+                            "TerminalSessionId": "0",
+                            "IntegrityLevel": "System",
+                            "ParentUser": "NT AUTHORITY\\SYSTEM",
+                            "Product": "Microsoft\u00ae Windows\u00ae Operating System",
+                            "FileVersion": "10.0.26100.3624 (WinBuild.160101.0800)",
+                            "LogonId": "0x3e7"
+                        },
+                        "opcode": "Info",
+                        "version": 5,
+                        "record_id": "63922",
+                        "event_id": "1",
+                        "task": "Process terminated (rule: ProcessTerminate)",
+                        "provider_guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+                        "api": "wineventlog",
+                        "provider_name": "Microsoft-Windows-Sysmon",
+                        "user": {
+                            "identifier": "S-1-5-18",
+                            "domain": "NT AUTHORITY",
+                            "name": "SYSTEM",
+                            "type": "User"
+                        }
+                    },
+                    "ecs": {
+                        "version": "8.17.0"
+                    },
+                    "related": {
+                        "user": [
+                            "SYSTEM"
+                        ],
+                        "hash": [
+                            "c772a80788ff09dca0af997fe8449d81555b02399e4ab357213ecfac5501783f"
+                        ]
+                    },
+                    "log": {
+                        "level": "information"
+                    },
+                    "host": {
+                        "hostname": "Rutu",
+                        "os": {
+                            "build": "26100.3624",
+                            "kernel": "10.0.26100.3624 (WinBuild.160101.0800)",
+                            "name": "Windows 11 Home Single Language",
+                            "family": "windows",
+                            "type": "windows",
+                            "version": "10.0",
+                            "platform": "windows"
+                        },
+                        "ip": [
+                            "fe80::55f0:c932:6663:73ea",
+                            "169.254.164.58",
+                            "fe80::4ac:ff14:96d4:9df",
+                            "169.254.30.83",
+                            "fe80::3145:98c1:4f1c:6335",
+                            "169.254.50.69",
+                            "fe80::64e1:c8dd:5356:c175",
+                            "10.6.9.15",
+                            "fe80::c973:d583:c0f6:30dc",
+                            "192.168.137.1"
+                        ],
+                        "name": "rutu",
+                        "id": "0c3d8327-75c7-4af9-a536-dd6fdc236ef1",
+                        "mac": [
+                            "00-FF-EE-C8-47-CB",
+                            "30-89-4A-CC-0C-FE",
+                            "30-89-4A-CC-0C-FF",
+                            "32-89-4A-CC-0C-FE"
+                        ],
+                        "architecture": "x86_64"
+                    },
+                    "message": "Process Create:\nRuleName: -\nUtcTime: 2025-04-09 05:14:17.968\nProcessGuid: {0c3d8327-0229-67f6-d454-000000001300}\nProcessId: 7900\nImage: C:\\Windows\\System32\\taskhostw.exe\nFileVersion: 10.0.26100.3624 (WinBuild.160101.0800)\nDescription: Host Process for Windows Tasks\nProduct: Microsoft\u00ae Windows\u00ae Operating System\nCompany: Microsoft Corporation\nOriginalFileName: taskhostw.exe\nCommandLine: taskhostw.exe\nCurrentDirectory: C:\\WINDOWS\\system32\\\nUser: NT AUTHORITY\\SYSTEM\nLogonGuid: {0c3d8327-125e-67e8-e703-000000000000}\nLogonId: 0x3E7\nTerminalSessionId: 0\nIntegrityLevel: System\nHashes: SHA256=C772A80788FF09DCA0AF997FE8449D81555B02399E4AB357213ECFAC5501783F\nParentProcessGuid: {0c3d8327-125f-67e8-3500-000000001300}\nParentProcessId: 2932\nParentImage: C:\\Windows\\System32\\svchost.exe\nParentCommandLine: C:\\WINDOWS\\system32\\svchost.exe -k netsvcs -p -s Schedule\nParentUser: NT AUTHORITY\\SYSTEM",
+                    "event": {
+                        "ingested": "2025-04-09T05:14:29.525542300Z",
+                        "code": "1",
+                        "provider": "Microsoft-Windows-Sysmon",
+                        "created": "2025-04-09T05:14:19.329Z",
+                        "kind": "event",
+                        "module": "sysmon",
+                        "action": "Process creation",
+                        "category": [
+                            "process"
+                        ],
+                        "type": [
+                            "start"
+                        ]
+                    },
+                    "user": {
+                        "domain": "NT AUTHORITY",
+                        "name": "SYSTEM",
+                        "id": "S-1-5-18"
+                    }
+                }
+            },
+            {
+                "_index": ".ds-winlogbeat-8.17.4-2025.03.26-000001",
+                "_id": "dw34GJYBZtu3qb7koTwh",
+                "_score": 1.0,
+                "_source": {
+                    "agent": {
+                        "name": "Rutu",
+                        "id": "3ad48d5f-fa93-4b64-86d7-42f3203fc5bc",
+                        "type": "winlogbeat",
+                        "ephemeral_id": "12ccbbb2-2910-4801-9e33-c06aa319b6e7",
+                        "version": "8.17.4"
+                    },
+                    "process": {
+                        "args": [
+                            "C:\\WINDOWS\\system32\\BackgroundTaskHost.exe",
+                            "-ServerName:BackgroundTaskHost.WebAccountProvider"
+                        ],
+                        "parent": {
+                            "args": [
+                                "C:\\WINDOWS\\system32\\svchost.exe",
+                                "-k",
+                                "DcomLaunch",
+                                "-p"
+                            ],
+                            "name": "svchost.exe",
+                            "pid": 1428,
+                            "args_count": 4,
+                            "entity_id": "{0c3d8327-125e-67e8-0f00-000000001300}",
+                            "executable": "C:\\Windows\\System32\\svchost.exe",
+                            "command_line": "C:\\WINDOWS\\system32\\svchost.exe -k DcomLaunch -p"
+                        },
+                        "pe": {
+                            "file_version": "10.0.26100.1 (WinBuild.160101.0800)",
+                            "product": "Microsoft\u00ae Windows\u00ae Operating System",
+                            "description": "Background Task Host",
+                            "original_file_name": "backgroundTaskHost.exe",
+                            "company": "Microsoft Corporation"
+                        },
+                        "name": "backgroundTaskHost.exe",
+                        "pid": 17276,
+                        "working_directory": "C:\\WINDOWS\\SystemApps\\Microsoft.AAD.BrokerPlugin_cw5n1h2txyewy\\",
+                        "args_count": 2,
+                        "entity_id": "{0c3d8327-022a-67f6-d554-000000001300}",
+                        "hash": {
+                            "sha256": "b7d2c17e0038945aa4b72ae7a89e54d29b04ccc0feb62df5c9b7b67de43c2530"
+                        },
+                        "executable": "C:\\Windows\\System32\\backgroundTaskHost.exe",
+                        "command_line": "\"C:\\WINDOWS\\system32\\BackgroundTaskHost.exe\" -ServerName:BackgroundTaskHost.WebAccountProvider"
+                    },
+                    "@timestamp": "2025-04-09T05:14:18.794Z",
+                    "winlog": {
+                        "computer_name": "Rutu",
+                        "process": {
+                            "pid": 5768,
+                            "thread": {
+                                "id": 7676
+                            }
+                        },
+                        "channel": "Microsoft-Windows-Sysmon/Operational",
+                        "event_data": {
+                            "Company": "Microsoft Corporation",
+                            "LogonGuid": "{0c3d8327-f810-67f5-7aee-f00a00000000}",
+                            "Description": "Background Task Host",
+                            "IntegrityLevel": "AppContainer",
+                            "TerminalSessionId": "8",
+                            "ParentUser": "NT AUTHORITY\\SYSTEM",
+                            "Product": "Microsoft\u00ae Windows\u00ae Operating System",
+                            "FileVersion": "10.0.26100.1 (WinBuild.160101.0800)",
+                            "LogonId": "0xaf0ee7a"
+                        },
+                        "opcode": "Info",
+                        "version": 5,
+                        "record_id": "63923",
+                        "event_id": "1",
+                        "task": "Process terminated (rule: ProcessTerminate)",
+                        "provider_guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+                        "api": "wineventlog",
+                        "provider_name": "Microsoft-Windows-Sysmon",
+                        "user": {
+                            "identifier": "S-1-5-18",
+                            "domain": "NT AUTHORITY",
+                            "name": "SYSTEM",
+                            "type": "User"
+                        }
+                    },
+                    "ecs": {
+                        "version": "8.17.0"
+                    },
+                    "related": {
+                        "user": [
+                            "bagul"
+                        ],
+                        "hash": [
+                            "b7d2c17e0038945aa4b72ae7a89e54d29b04ccc0feb62df5c9b7b67de43c2530"
+                        ]
+                    },
+                    "log": {
+                        "level": "information"
+                    },
+                    "host": {
+                        "hostname": "Rutu",
+                        "os": {
+                            "build": "26100.3624",
+                            "kernel": "10.0.26100.3624 (WinBuild.160101.0800)",
+                            "name": "Windows 11 Home Single Language",
+                            "family": "windows",
+                            "type": "windows",
+                            "version": "10.0",
+                            "platform": "windows"
+                        },
+                        "ip": [
+                            "fe80::55f0:c932:6663:73ea",
+                            "169.254.164.58",
+                            "fe80::4ac:ff14:96d4:9df",
+                            "169.254.30.83",
+                            "fe80::3145:98c1:4f1c:6335",
+                            "169.254.50.69",
+                            "fe80::64e1:c8dd:5356:c175",
+                            "10.6.9.15",
+                            "fe80::c973:d583:c0f6:30dc",
+                            "192.168.137.1"
+                        ],
+                        "name": "rutu",
+                        "id": "0c3d8327-75c7-4af9-a536-dd6fdc236ef1",
+                        "mac": [
+                            "00-FF-EE-C8-47-CB",
+                            "30-89-4A-CC-0C-FE",
+                            "30-89-4A-CC-0C-FF",
+                            "32-89-4A-CC-0C-FE"
+                        ],
+                        "architecture": "x86_64"
+                    },
+                    "message": "Process Create:\nRuleName: -\nUtcTime: 2025-04-09 05:14:18.794\nProcessGuid: {0c3d8327-022a-67f6-d554-000000001300}\nProcessId: 17276\nImage: C:\\Windows\\System32\\backgroundTaskHost.exe\nFileVersion: 10.0.26100.1 (WinBuild.160101.0800)\nDescription: Background Task Host\nProduct: Microsoft\u00ae Windows\u00ae Operating System\nCompany: Microsoft Corporation\nOriginalFileName: backgroundTaskHost.exe\nCommandLine: \"C:\\WINDOWS\\system32\\BackgroundTaskHost.exe\" -ServerName:BackgroundTaskHost.WebAccountProvider\nCurrentDirectory: C:\\WINDOWS\\SystemApps\\Microsoft.AAD.BrokerPlugin_cw5n1h2txyewy\\\nUser: Rutu\\bagul\nLogonGuid: {0c3d8327-f810-67f5-7aee-f00a00000000}\nLogonId: 0xAF0EE7A\nTerminalSessionId: 8\nIntegrityLevel: AppContainer\nHashes: SHA256=B7D2C17E0038945AA4B72AE7A89E54D29B04CCC0FEB62DF5C9B7B67DE43C2530\nParentProcessGuid: {0c3d8327-125e-67e8-0f00-000000001300}\nParentProcessId: 1428\nParentImage: C:\\Windows\\System32\\svchost.exe\nParentCommandLine: C:\\WINDOWS\\system32\\svchost.exe -k DcomLaunch -p\nParentUser: NT AUTHORITY\\SYSTEM",
+                    "event": {
+                        "ingested": "2025-04-09T05:14:29.527370100Z",
+                        "code": "1",
+                        "provider": "Microsoft-Windows-Sysmon",
+                        "kind": "event",
+                        "created": "2025-04-09T05:14:19.329Z",
+                        "module": "sysmon",
+                        "action": "Process creation",
+                        "category": [
+                            "process"
+                        ],
+                        "type": [
+                            "start"
+                        ]
+                    },
+                    "user": {
+                        "domain": "Rutu",
+                        "name": "bagul",
+                        "id": "S-1-5-18"
+                    }
+                }
+            },
+            {
+                "_index": ".ds-winlogbeat-8.17.4-2025.03.26-000001",
+                "_id": "eA34GJYBZtu3qb7koTwh",
+                "_score": 1.0,
+                "_source": {
+                    "agent": {
+                        "name": "Rutu",
+                        "id": "3ad48d5f-fa93-4b64-86d7-42f3203fc5bc",
+                        "type": "winlogbeat",
+                        "ephemeral_id": "12ccbbb2-2910-4801-9e33-c06aa319b6e7",
+                        "version": "8.17.4"
+                    },
+                    "process": {
+                        "args": [
+                            "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+                            "--type=renderer",
+                            "--no-pre-read-main-dll",
+                            "--video-capture-use-gpu-memory-buffer",
+                            "--lang=en-GB",
+                            "--device-scale-factor=2",
+                            "--num-raster-threads=4",
+                            "--enable-main-frame-before-activation",
+                            "--renderer-client-id=54",
+                            "--time-ticks-at-unix-epoch=-1743262270035168",
+                            "--launch-time-ticks=913388855264",
+                            "--field-trial-handle=1888,i,9365809002119482789,10653373512648765991,262144",
+                            "--variations-seed-version=20250408-050123.787000",
+                            "--mojo-platform-channel-handle=8748",
+                            "/prefetch:1"
+                        ],
+                        "parent": {
+                            "args": [
+                                "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+                            ],
+                            "name": "chrome.exe",
+                            "pid": 22388,
+                            "args_count": 1,
+                            "entity_id": "{0c3d8327-f988-67f5-9353-000000001300}",
+                            "executable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+                            "command_line": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" "
+                        },
+                        "pe": {
+                            "file_version": "135.0.7049.42",
+                            "product": "Google Chrome",
+                            "description": "Google Chrome",
+                            "original_file_name": "chrome.exe",
+                            "company": "Google LLC"
+                        },
+                        "name": "chrome.exe",
+                        "pid": 20812,
+                        "working_directory": "C:\\Program Files\\Google\\Chrome\\Application\\135.0.7049.42\\",
+                        "args_count": 15,
+                        "entity_id": "{0c3d8327-022a-67f6-d654-000000001300}",
+                        "hash": {
+                            "sha256": "3ba7aac25de391864ac103f54354816376a79773f447166c64689de761eb9475"
+                        },
+                        "executable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+                        "command_line": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=renderer --no-pre-read-main-dll --video-capture-use-gpu-memory-buffer --lang=en-GB --device-scale-factor=2 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=54 --time-ticks-at-unix-epoch=-1743262270035168 --launch-time-ticks=913388855264 --field-trial-handle=1888,i,9365809002119482789,10653373512648765991,262144 --variations-seed-version=20250408-050123.787000 --mojo-platform-channel-handle=8748 /prefetch:1"
+                    },
+                    "@timestamp": "2025-04-09T05:14:18.892Z",
+                    "winlog": {
+                        "computer_name": "Rutu",
+                        "process": {
+                            "pid": 5768,
+                            "thread": {
+                                "id": 7676
+                            }
+                        },
+                        "channel": "Microsoft-Windows-Sysmon/Operational",
+                        "event_data": {
+                            "Company": "Google LLC",
+                            "Description": "Google Chrome",
+                            "LogonGuid": "{0c3d8327-f810-67f5-7aee-f00a00000000}",
+                            "TerminalSessionId": "8",
+                            "IntegrityLevel": "Low",
+                            "Product": "Google Chrome",
+                            "ParentUser": "Rutu\\bagul",
+                            "FileVersion": "135.0.7049.42",
+                            "LogonId": "0xaf0ee7a"
+                        },
+                        "opcode": "Info",
+                        "version": 5,
+                        "record_id": "63924",
+                        "event_id": "1",
+                        "task": "Process terminated (rule: ProcessTerminate)",
+                        "provider_guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+                        "api": "wineventlog",
+                        "provider_name": "Microsoft-Windows-Sysmon",
+                        "user": {
+                            "identifier": "S-1-5-18",
+                            "domain": "NT AUTHORITY",
+                            "name": "SYSTEM",
+                            "type": "User"
+                        }
+                    },
+                    "ecs": {
+                        "version": "8.17.0"
+                    },
+                    "related": {
+                        "user": [
+                            "bagul"
+                        ],
+                        "hash": [
+                            "3ba7aac25de391864ac103f54354816376a79773f447166c64689de761eb9475"
+                        ]
+                    },
+                    "log": {
+                        "level": "information"
+                    },
+                    "host": {
+                        "hostname": "Rutu",
+                        "os": {
+                            "build": "26100.3624",
+                            "kernel": "10.0.26100.3624 (WinBuild.160101.0800)",
+                            "name": "Windows 11 Home Single Language",
+                            "family": "windows",
+                            "type": "windows",
+                            "version": "10.0",
+                            "platform": "windows"
+                        },
+                        "ip": [
+                            "fe80::55f0:c932:6663:73ea",
+                            "169.254.164.58",
+                            "fe80::4ac:ff14:96d4:9df",
+                            "169.254.30.83",
+                            "fe80::3145:98c1:4f1c:6335",
+                            "169.254.50.69",
+                            "fe80::64e1:c8dd:5356:c175",
+                            "10.6.9.15",
+                            "fe80::c973:d583:c0f6:30dc",
+                            "192.168.137.1"
+                        ],
+                        "name": "rutu",
+                        "id": "0c3d8327-75c7-4af9-a536-dd6fdc236ef1",
+                        "mac": [
+                            "00-FF-EE-C8-47-CB",
+                            "30-89-4A-CC-0C-FE",
+                            "30-89-4A-CC-0C-FF",
+                            "32-89-4A-CC-0C-FE"
+                        ],
+                        "architecture": "x86_64"
+                    },
+                    "event": {
+                        "ingested": "2025-04-09T05:14:29.531772800Z",
+                        "code": "1",
+                        "provider": "Microsoft-Windows-Sysmon",
+                        "created": "2025-04-09T05:14:20.373Z",
+                        "kind": "event",
+                        "module": "sysmon",
+                        "action": "Process creation",
+                        "category": [
+                            "process"
+                        ],
+                        "type": [
+                            "start"
+                        ]
+                    },
+                    "message": "Process Create:\nRuleName: -\nUtcTime: 2025-04-09 05:14:18.892\nProcessGuid: {0c3d8327-022a-67f6-d654-000000001300}\nProcessId: 20812\nImage: C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\nFileVersion: 135.0.7049.42\nDescription: Google Chrome\nProduct: Google Chrome\nCompany: Google LLC\nOriginalFileName: chrome.exe\nCommandLine: \"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=renderer --no-pre-read-main-dll --video-capture-use-gpu-memory-buffer --lang=en-GB --device-scale-factor=2 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=54 --time-ticks-at-unix-epoch=-1743262270035168 --launch-time-ticks=913388855264 --field-trial-handle=1888,i,9365809002119482789,10653373512648765991,262144 --variations-seed-version=20250408-050123.787000 --mojo-platform-channel-handle=8748 /prefetch:1\nCurrentDirectory: C:\\Program Files\\Google\\Chrome\\Application\\135.0.7049.42\\\nUser: Rutu\\bagul\nLogonGuid: {0c3d8327-f810-67f5-7aee-f00a00000000}\nLogonId: 0xAF0EE7A\nTerminalSessionId: 8\nIntegrityLevel: Low\nHashes: SHA256=3BA7AAC25DE391864AC103F54354816376A79773F447166C64689DE761EB9475\nParentProcessGuid: {0c3d8327-f988-67f5-9353-000000001300}\nParentProcessId: 22388\nParentImage: C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\nParentCommandLine: \"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" \nParentUser: Rutu\\bagul",
+                    "user": {
+                        "domain": "Rutu",
+                        "name": "bagul",
+                        "id": "S-1-5-18"
+                    }
+                }
+            },
+            {
+                "_index": ".ds-winlogbeat-8.17.4-2025.03.26-000001",
+                "_id": "eQ34GJYBZtu3qb7koTwh",
+                "_score": 1.0,
+                "_source": {
+                    "agent": {
+                        "name": "Rutu",
+                        "id": "3ad48d5f-fa93-4b64-86d7-42f3203fc5bc",
+                        "type": "winlogbeat",
+                        "ephemeral_id": "12ccbbb2-2910-4801-9e33-c06aa319b6e7",
+                        "version": "8.17.4"
+                    },
+                    "process": {
+                        "args": [
+                            "C:\\Windows\\System32\\RuntimeBroker.exe",
+                            "-Embedding"
+                        ],
+                        "parent": {
+                            "args": [
+                                "C:\\WINDOWS\\system32\\svchost.exe",
+                                "-k",
+                                "DcomLaunch",
+                                "-p"
+                            ],
+                            "name": "svchost.exe",
+                            "pid": 1428,
+                            "args_count": 4,
+                            "entity_id": "{0c3d8327-125e-67e8-0f00-000000001300}",
+                            "executable": "C:\\Windows\\System32\\svchost.exe",
+                            "command_line": "C:\\WINDOWS\\system32\\svchost.exe -k DcomLaunch -p"
+                        },
+                        "pe": {
+                            "file_version": "10.0.26100.3624 (WinBuild.160101.0800)",
+                            "product": "Microsoft\u00ae Windows\u00ae Operating System",
+                            "description": "Runtime Broker",
+                            "original_file_name": "RuntimeBroker.exe",
+                            "company": "Microsoft Corporation"
+                        },
+                        "name": "RuntimeBroker.exe",
+                        "pid": 20424,
+                        "working_directory": "C:\\WINDOWS\\system32\\",
+                        "args_count": 2,
+                        "entity_id": "{0c3d8327-022b-67f6-d754-000000001300}",
+                        "hash": {
+                            "sha256": "05d3cc5105682697e8ae4a9ae2a587758b7030634c015b8b5721cf09602c815a"
+                        },
+                        "executable": "C:\\Windows\\System32\\RuntimeBroker.exe",
+                        "command_line": "C:\\Windows\\System32\\RuntimeBroker.exe -Embedding"
+                    },
+                    "@timestamp": "2025-04-09T05:14:19.242Z",
+                    "winlog": {
+                        "computer_name": "Rutu",
+                        "process": {
+                            "pid": 5768,
+                            "thread": {
+                                "id": 7676
+                            }
+                        },
+                        "channel": "Microsoft-Windows-Sysmon/Operational",
+                        "event_data": {
+                            "Company": "Microsoft Corporation",
+                            "LogonGuid": "{0c3d8327-f810-67f5-7aee-f00a00000000}",
+                            "Description": "Runtime Broker",
+                            "TerminalSessionId": "8",
+                            "IntegrityLevel": "Medium",
+                            "ParentUser": "NT AUTHORITY\\SYSTEM",
+                            "Product": "Microsoft\u00ae Windows\u00ae Operating System",
+                            "FileVersion": "10.0.26100.3624 (WinBuild.160101.0800)",
+                            "LogonId": "0xaf0ee7a"
+                        },
+                        "opcode": "Info",
+                        "version": 5,
+                        "record_id": "63925",
+                        "event_id": "1",
+                        "task": "Process terminated (rule: ProcessTerminate)",
+                        "provider_guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+                        "api": "wineventlog",
+                        "provider_name": "Microsoft-Windows-Sysmon",
+                        "user": {
+                            "identifier": "S-1-5-18",
+                            "domain": "NT AUTHORITY",
+                            "name": "SYSTEM",
+                            "type": "User"
+                        }
+                    },
+                    "ecs": {
+                        "version": "8.17.0"
+                    },
+                    "related": {
+                        "user": [
+                            "bagul"
+                        ],
+                        "hash": [
+                            "05d3cc5105682697e8ae4a9ae2a587758b7030634c015b8b5721cf09602c815a"
+                        ]
+                    },
+                    "log": {
+                        "level": "information"
+                    },
+                    "host": {
+                        "hostname": "Rutu",
+                        "os": {
+                            "build": "26100.3624",
+                            "kernel": "10.0.26100.3624 (WinBuild.160101.0800)",
+                            "name": "Windows 11 Home Single Language",
+                            "type": "windows",
+                            "family": "windows",
+                            "version": "10.0",
+                            "platform": "windows"
+                        },
+                        "ip": [
+                            "fe80::55f0:c932:6663:73ea",
+                            "169.254.164.58",
+                            "fe80::4ac:ff14:96d4:9df",
+                            "169.254.30.83",
+                            "fe80::3145:98c1:4f1c:6335",
+                            "169.254.50.69",
+                            "fe80::64e1:c8dd:5356:c175",
+                            "10.6.9.15",
+                            "fe80::c973:d583:c0f6:30dc",
+                            "192.168.137.1"
+                        ],
+                        "name": "rutu",
+                        "id": "0c3d8327-75c7-4af9-a536-dd6fdc236ef1",
+                        "mac": [
+                            "00-FF-EE-C8-47-CB",
+                            "30-89-4A-CC-0C-FE",
+                            "30-89-4A-CC-0C-FF",
+                            "32-89-4A-CC-0C-FE"
+                        ],
+                        "architecture": "x86_64"
+                    },
+                    "event": {
+                        "ingested": "2025-04-09T05:14:29.533299800Z",
+                        "code": "1",
+                        "provider": "Microsoft-Windows-Sysmon",
+                        "created": "2025-04-09T05:14:20.373Z",
+                        "kind": "event",
+                        "module": "sysmon",
+                        "action": "Process creation",
+                        "category": [
+                            "process"
+                        ],
+                        "type": [
+                            "start"
+                        ]
+                    },
+                    "message": "Process Create:\nRuleName: -\nUtcTime: 2025-04-09 05:14:19.242\nProcessGuid: {0c3d8327-022b-67f6-d754-000000001300}\nProcessId: 20424\nImage: C:\\Windows\\System32\\RuntimeBroker.exe\nFileVersion: 10.0.26100.3624 (WinBuild.160101.0800)\nDescription: Runtime Broker\nProduct: Microsoft\u00ae Windows\u00ae Operating System\nCompany: Microsoft Corporation\nOriginalFileName: RuntimeBroker.exe\nCommandLine: C:\\Windows\\System32\\RuntimeBroker.exe -Embedding\nCurrentDirectory: C:\\WINDOWS\\system32\\\nUser: Rutu\\bagul\nLogonGuid: {0c3d8327-f810-67f5-7aee-f00a00000000}\nLogonId: 0xAF0EE7A\nTerminalSessionId: 8\nIntegrityLevel: Medium\nHashes: SHA256=05D3CC5105682697E8AE4A9AE2A587758B7030634C015B8B5721CF09602C815A\nParentProcessGuid: {0c3d8327-125e-67e8-0f00-000000001300}\nParentProcessId: 1428\nParentImage: C:\\Windows\\System32\\svchost.exe\nParentCommandLine: C:\\WINDOWS\\system32\\svchost.exe -k DcomLaunch -p\nParentUser: NT AUTHORITY\\SYSTEM",
+                    "user": {
+                        "domain": "Rutu",
+                        "name": "bagul",
+                        "id": "S-1-5-18"
+                    }
+                }
+            },
+            {
+                "_index": ".ds-winlogbeat-8.17.4-2025.03.26-000001",
+                "_id": "eg34GJYBZtu3qb7koTwh",
+                "_score": 1.0,
+                "_source": {
+                    "agent": {
+                        "name": "Rutu",
+                        "id": "3ad48d5f-fa93-4b64-86d7-42f3203fc5bc",
+                        "ephemeral_id": "12ccbbb2-2910-4801-9e33-c06aa319b6e7",
+                        "type": "winlogbeat",
+                        "version": "8.17.4"
+                    },
+                    "process": {
+                        "name": "backgroundTaskHost.exe",
+                        "pid": 17276,
+                        "entity_id": "{0c3d8327-022a-67f6-d554-000000001300}",
+                        "executable": "C:\\Windows\\System32\\backgroundTaskHost.exe"
+                    },
+                    "@timestamp": "2025-04-09T05:14:19.600Z",
+                    "winlog": {
+                        "computer_name": "Rutu",
+                        "process": {
+                            "pid": 5768,
+                            "thread": {
+                                "id": 7676
+                            }
+                        },
+                        "channel": "Microsoft-Windows-Sysmon/Operational",
+                        "opcode": "Info",
+                        "version": 3,
+                        "record_id": "63926",
+                        "event_id": "5",
+                        "task": "Process terminated (rule: ProcessTerminate)",
+                        "provider_guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+                        "api": "wineventlog",
+                        "provider_name": "Microsoft-Windows-Sysmon",
+                        "user": {
+                            "identifier": "S-1-5-18",
+                            "domain": "NT AUTHORITY",
+                            "name": "SYSTEM",
+                            "type": "User"
+                        }
+                    },
+                    "ecs": {
+                        "version": "8.17.0"
+                    },
+                    "related": {
+                        "user": [
+                            "bagul"
+                        ]
+                    },
+                    "log": {
+                        "level": "information"
+                    },
+                    "host": {
+                        "hostname": "Rutu",
+                        "os": {
+                            "build": "26100.3624",
+                            "kernel": "10.0.26100.3624 (WinBuild.160101.0800)",
+                            "name": "Windows 11 Home Single Language",
+                            "type": "windows",
+                            "family": "windows",
+                            "version": "10.0",
+                            "platform": "windows"
+                        },
+                        "ip": [
+                            "fe80::55f0:c932:6663:73ea",
+                            "169.254.164.58",
+                            "fe80::4ac:ff14:96d4:9df",
+                            "169.254.30.83",
+                            "fe80::3145:98c1:4f1c:6335",
+                            "169.254.50.69",
+                            "fe80::64e1:c8dd:5356:c175",
+                            "10.6.9.15",
+                            "fe80::c973:d583:c0f6:30dc",
+                            "192.168.137.1"
+                        ],
+                        "name": "rutu",
+                        "id": "0c3d8327-75c7-4af9-a536-dd6fdc236ef1",
+                        "mac": [
+                            "00-FF-EE-C8-47-CB",
+                            "30-89-4A-CC-0C-FE",
+                            "30-89-4A-CC-0C-FF",
+                            "32-89-4A-CC-0C-FE"
+                        ],
+                        "architecture": "x86_64"
+                    },
+                    "event": {
+                        "ingested": "2025-04-09T05:14:29.533299800Z",
+                        "code": "5",
+                        "provider": "Microsoft-Windows-Sysmon",
+                        "created": "2025-04-09T05:14:20.373Z",
+                        "kind": "event",
+                        "module": "sysmon",
+                        "action": "Process terminated",
+                        "category": [
+                            "process"
+                        ],
+                        "type": [
+                            "end"
+                        ]
+                    },
+                    "message": "Process terminated:\nRuleName: -\nUtcTime: 2025-04-09 05:14:19.600\nProcessGuid: {0c3d8327-022a-67f6-d554-000000001300}\nProcessId: 17276\nImage: C:\\Windows\\System32\\backgroundTaskHost.exe\nUser: Rutu\\bagul",
+                    "user": {
+                        "domain": "Rutu",
+                        "name": "bagul",
+                        "id": "S-1-5-18"
+                    }
+                }
+            },
+            {
+                "_index": ".ds-winlogbeat-8.17.4-2025.03.26-000001",
+                "_id": "ew34GJYBZtu3qb7koTwh",
+                "_score": 1.0,
+                "_source": {
+                    "agent": {
+                        "name": "Rutu",
+                        "id": "3ad48d5f-fa93-4b64-86d7-42f3203fc5bc",
+                        "type": "winlogbeat",
+                        "ephemeral_id": "12ccbbb2-2910-4801-9e33-c06aa319b6e7",
+                        "version": "8.17.4"
+                    },
+                    "process": {
+                        "name": "chrome.exe",
+                        "pid": 9892,
+                        "entity_id": "{0c3d8327-01c0-67f6-cb54-000000001300}",
+                        "executable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+                    },
+                    "@timestamp": "2025-04-09T05:14:19.916Z",
+                    "winlog": {
+                        "computer_name": "Rutu",
+                        "process": {
+                            "pid": 5768,
+                            "thread": {
+                                "id": 7676
+                            }
+                        },
+                        "channel": "Microsoft-Windows-Sysmon/Operational",
+                        "opcode": "Info",
+                        "version": 3,
+                        "record_id": "63927",
+                        "event_id": "5",
+                        "task": "Process terminated (rule: ProcessTerminate)",
+                        "provider_guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+                        "api": "wineventlog",
+                        "provider_name": "Microsoft-Windows-Sysmon",
+                        "user": {
+                            "identifier": "S-1-5-18",
+                            "domain": "NT AUTHORITY",
+                            "name": "SYSTEM",
+                            "type": "User"
+                        }
+                    },
+                    "ecs": {
+                        "version": "8.17.0"
+                    },
+                    "related": {
+                        "user": [
+                            "bagul"
+                        ]
+                    },
+                    "log": {
+                        "level": "information"
+                    },
+                    "host": {
+                        "hostname": "Rutu",
+                        "os": {
+                            "build": "26100.3624",
+                            "kernel": "10.0.26100.3624 (WinBuild.160101.0800)",
+                            "name": "Windows 11 Home Single Language",
+                            "type": "windows",
+                            "family": "windows",
+                            "version": "10.0",
+                            "platform": "windows"
+                        },
+                        "ip": [
+                            "fe80::55f0:c932:6663:73ea",
+                            "169.254.164.58",
+                            "fe80::4ac:ff14:96d4:9df",
+                            "169.254.30.83",
+                            "fe80::3145:98c1:4f1c:6335",
+                            "169.254.50.69",
+                            "fe80::64e1:c8dd:5356:c175",
+                            "10.6.9.15",
+                            "fe80::c973:d583:c0f6:30dc",
+                            "192.168.137.1"
+                        ],
+                        "name": "rutu",
+                        "id": "0c3d8327-75c7-4af9-a536-dd6fdc236ef1",
+                        "mac": [
+                            "00-FF-EE-C8-47-CB",
+                            "30-89-4A-CC-0C-FE",
+                            "30-89-4A-CC-0C-FF",
+                            "32-89-4A-CC-0C-FE"
+                        ],
+                        "architecture": "x86_64"
+                    },
+                    "message": "Process terminated:\nRuleName: -\nUtcTime: 2025-04-09 05:14:19.916\nProcessGuid: {0c3d8327-01c0-67f6-cb54-000000001300}\nProcessId: 9892\nImage: C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\nUser: Rutu\\bagul",
+                    "event": {
+                        "ingested": "2025-04-09T05:14:29.535297200Z",
+                        "code": "5",
+                        "provider": "Microsoft-Windows-Sysmon",
+                        "kind": "event",
+                        "created": "2025-04-09T05:14:20.374Z",
+                        "module": "sysmon",
+                        "action": "Process terminated",
+                        "category": [
+                            "process"
+                        ],
+                        "type": [
+                            "end"
+                        ]
+                    },
+                    "user": {
+                        "domain": "Rutu",
+                        "name": "bagul",
+                        "id": "S-1-5-18"
+                    }
+                }
+            },
+            {
+                "_index": ".ds-winlogbeat-8.17.4-2025.03.26-000001",
+                "_id": "fA34GJYBZtu3qb7koTwh",
+                "_score": 1.0,
+                "_source": {
+                    "agent": {
+                        "name": "Rutu",
+                        "id": "3ad48d5f-fa93-4b64-86d7-42f3203fc5bc",
+                        "type": "winlogbeat",
+                        "ephemeral_id": "12ccbbb2-2910-4801-9e33-c06aa319b6e7",
+                        "version": "8.17.4"
+                    },
+                    "process": {
+                        "name": "chrome.exe",
+                        "pid": 22124,
+                        "entity_id": "{0c3d8327-01ed-67f6-d154-000000001300}",
+                        "executable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+                    },
+                    "@timestamp": "2025-04-09T05:14:19.917Z",
+                    "winlog": {
+                        "computer_name": "Rutu",
+                        "process": {
+                            "pid": 5768,
+                            "thread": {
+                                "id": 7676
+                            }
+                        },
+                        "channel": "Microsoft-Windows-Sysmon/Operational",
+                        "opcode": "Info",
+                        "version": 3,
+                        "record_id": "63928",
+                        "event_id": "5",
+                        "task": "Process terminated (rule: ProcessTerminate)",
+                        "provider_guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+                        "api": "wineventlog",
+                        "provider_name": "Microsoft-Windows-Sysmon",
+                        "user": {
+                            "identifier": "S-1-5-18",
+                            "domain": "NT AUTHORITY",
+                            "name": "SYSTEM",
+                            "type": "User"
+                        }
+                    },
+                    "ecs": {
+                        "version": "8.17.0"
+                    },
+                    "related": {
+                        "user": [
+                            "bagul"
+                        ]
+                    },
+                    "log": {
+                        "level": "information"
+                    },
+                    "host": {
+                        "hostname": "Rutu",
+                        "os": {
+                            "build": "26100.3624",
+                            "kernel": "10.0.26100.3624 (WinBuild.160101.0800)",
+                            "name": "Windows 11 Home Single Language",
+                            "family": "windows",
+                            "type": "windows",
+                            "version": "10.0",
+                            "platform": "windows"
+                        },
+                        "ip": [
+                            "fe80::55f0:c932:6663:73ea",
+                            "169.254.164.58",
+                            "fe80::4ac:ff14:96d4:9df",
+                            "169.254.30.83",
+                            "fe80::3145:98c1:4f1c:6335",
+                            "169.254.50.69",
+                            "fe80::64e1:c8dd:5356:c175",
+                            "10.6.9.15",
+                            "fe80::c973:d583:c0f6:30dc",
+                            "192.168.137.1"
+                        ],
+                        "name": "rutu",
+                        "id": "0c3d8327-75c7-4af9-a536-dd6fdc236ef1",
+                        "mac": [
+                            "00-FF-EE-C8-47-CB",
+                            "30-89-4A-CC-0C-FE",
+                            "30-89-4A-CC-0C-FF",
+                            "32-89-4A-CC-0C-FE"
+                        ],
+                        "architecture": "x86_64"
+                    },
+                    "event": {
+                        "ingested": "2025-04-09T05:14:29.535297200Z",
+                        "code": "5",
+                        "provider": "Microsoft-Windows-Sysmon",
+                        "created": "2025-04-09T05:14:20.374Z",
+                        "kind": "event",
+                        "module": "sysmon",
+                        "action": "Process terminated",
+                        "category": [
+                            "process"
+                        ],
+                        "type": [
+                            "end"
+                        ]
+                    },
+                    "message": "Process terminated:\nRuleName: -\nUtcTime: 2025-04-09 05:14:19.917\nProcessGuid: {0c3d8327-01ed-67f6-d154-000000001300}\nProcessId: 22124\nImage: C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\nUser: Rutu\\bagul",
+                    "user": {
+                        "domain": "Rutu",
+                        "name": "bagul",
+                        "id": "S-1-5-18"
+                    }
+                }
+            },
+            {
+                "_index": ".ds-winlogbeat-8.17.4-2025.03.26-000001",
+                "_id": "fQ34GJYBZtu3qb7koTwh",
+                "_score": 1.0,
+                "_source": {
+                    "agent": {
+                        "name": "Rutu",
+                        "id": "3ad48d5f-fa93-4b64-86d7-42f3203fc5bc",
+                        "type": "winlogbeat",
+                        "ephemeral_id": "12ccbbb2-2910-4801-9e33-c06aa319b6e7",
+                        "version": "8.17.4"
+                    },
+                    "@timestamp": "2025-04-09T05:14:20.806Z",
+                    "winlog": {
+                        "computer_name": "Rutu",
+                        "record_id": 110757,
+                        "process": {
+                            "pid": 2268
+                        },
+                        "event_id": "16394",
+                        "task": "None",
+                        "keywords": [
+                            "Classic"
+                        ],
+                        "provider_guid": "{E23B33B0-C8C9-472C-A5F9-F2BDFEA0F156}",
+                        "channel": "Application",
+                        "api": "wineventlog",
+                        "opcode": "Info",
+                        "provider_name": "Microsoft-Windows-Security-SPP"
+                    },
+                    "ecs": {
+                        "version": "8.0.0"
+                    },
+                    "log": {
+                        "level": "information"
+                    },
+                    "host": {
+                        "hostname": "Rutu",
+                        "os": {
+                            "build": "26100.3624",
+                            "kernel": "10.0.26100.3624 (WinBuild.160101.0800)",
+                            "name": "Windows 11 Home Single Language",
+                            "family": "windows",
+                            "type": "windows",
+                            "version": "10.0",
+                            "platform": "windows"
+                        },
+                        "ip": [
+                            "fe80::55f0:c932:6663:73ea",
+                            "169.254.164.58",
+                            "fe80::4ac:ff14:96d4:9df",
+                            "169.254.30.83",
+                            "fe80::3145:98c1:4f1c:6335",
+                            "169.254.50.69",
+                            "fe80::64e1:c8dd:5356:c175",
+                            "10.6.9.15",
+                            "fe80::c973:d583:c0f6:30dc",
+                            "192.168.137.1"
+                        ],
+                        "name": "rutu",
+                        "id": "0c3d8327-75c7-4af9-a536-dd6fdc236ef1",
+                        "mac": [
+                            "00-FF-EE-C8-47-CB",
+                            "30-89-4A-CC-0C-FE",
+                            "30-89-4A-CC-0C-FF",
+                            "32-89-4A-CC-0C-FE"
+                        ],
+                        "architecture": "x86_64"
+                    },
+                    "message": "Offline downlevel migration succeeded.",
+                    "event": {
+                        "ingested": "2025-04-09T05:14:29.536296700Z",
+                        "code": "16394",
+                        "provider": "Microsoft-Windows-Security-SPP",
+                        "created": "2025-04-09T05:14:21.094Z",
+                        "kind": "event",
+                        "action": "None"
+                    }
+                }
+            },
+            {
+                "_index": ".ds-winlogbeat-8.17.4-2025.03.26-000001",
+                "_id": "fg34GJYBZtu3qb7koTwh",
+                "_score": 1.0,
+                "_source": {
+                    "agent": {
+                        "name": "Rutu",
+                        "id": "3ad48d5f-fa93-4b64-86d7-42f3203fc5bc",
+                        "type": "winlogbeat",
+                        "ephemeral_id": "12ccbbb2-2910-4801-9e33-c06aa319b6e7",
+                        "version": "8.17.4"
+                    },
+                    "process": {
+                        "args": [
+                            "C:\\WINDOWS\\system32\\sppsvc.exe"
+                        ],
+                        "parent": {
+                            "args": [
+                                "C:\\WINDOWS\\system32\\services.exe"
+                            ],
+                            "name": "services.exe",
+                            "pid": 1196,
+                            "args_count": 1,
+                            "entity_id": "{0c3d8327-125e-67e8-0b00-000000001300}",
+                            "executable": "C:\\Windows\\System32\\services.exe",
+                            "command_line": "C:\\WINDOWS\\system32\\services.exe"
+                        },
+                        "pe": {
+                            "file_version": "10.0.26100.3624 (WinBuild.160101.0800)",
+                            "product": "Microsoft\u00ae Windows\u00ae Operating System",
+                            "description": "Microsoft Software Protection Platform Service",
+                            "original_file_name": "sppsvc.exe",
+                            "company": "Microsoft Corporation"
+                        },
+                        "name": "sppsvc.exe",
+                        "pid": 2268,
+                        "working_directory": "C:\\WINDOWS",
+                        "args_count": 1,
+                        "entity_id": "{0c3d8327-022c-67f6-d854-000000001300}",
+                        "hash": {
+                            "sha256": "664ff7aaa11ed91ce9538b8c7c25e8bfdcfd4afc62014b0e30e599a128730476"
+                        },
+                        "executable": "C:\\Windows\\System32\\sppsvc.exe",
+                        "command_line": "C:\\WINDOWS\\system32\\sppsvc.exe"
+                    },
+                    "@timestamp": "2025-04-09T05:14:20.486Z",
+                    "winlog": {
+                        "computer_name": "Rutu",
+                        "process": {
+                            "pid": 5768,
+                            "thread": {
+                                "id": 7676
+                            }
+                        },
+                        "channel": "Microsoft-Windows-Sysmon/Operational",
+                        "event_data": {
+                            "Company": "Microsoft Corporation",
+                            "LogonGuid": "{0c3d8327-125f-67e8-e403-000000000000}",
+                            "Description": "Microsoft Software Protection Platform Service",
+                            "IntegrityLevel": "System",
+                            "TerminalSessionId": "0",
+                            "ParentUser": "NT AUTHORITY\\SYSTEM",
+                            "Product": "Microsoft\u00ae Windows\u00ae Operating System",
+                            "FileVersion": "10.0.26100.3624 (WinBuild.160101.0800)",
+                            "LogonId": "0x3e4"
+                        },
+                        "opcode": "Info",
+                        "version": 5,
+                        "record_id": "63929",
+                        "event_id": "1",
+                        "task": "Process terminated (rule: ProcessTerminate)",
+                        "provider_guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+                        "api": "wineventlog",
+                        "provider_name": "Microsoft-Windows-Sysmon",
+                        "user": {
+                            "identifier": "S-1-5-18",
+                            "domain": "NT AUTHORITY",
+                            "name": "SYSTEM",
+                            "type": "User"
+                        }
+                    },
+                    "ecs": {
+                        "version": "8.17.0"
+                    },
+                    "related": {
+                        "user": [
+                            "NETWORK SERVICE"
+                        ],
+                        "hash": [
+                            "664ff7aaa11ed91ce9538b8c7c25e8bfdcfd4afc62014b0e30e599a128730476"
+                        ]
+                    },
+                    "log": {
+                        "level": "information"
+                    },
+                    "host": {
+                        "hostname": "Rutu",
+                        "os": {
+                            "build": "26100.3624",
+                            "kernel": "10.0.26100.3624 (WinBuild.160101.0800)",
+                            "name": "Windows 11 Home Single Language",
+                            "family": "windows",
+                            "type": "windows",
+                            "version": "10.0",
+                            "platform": "windows"
+                        },
+                        "ip": [
+                            "fe80::55f0:c932:6663:73ea",
+                            "169.254.164.58",
+                            "fe80::4ac:ff14:96d4:9df",
+                            "169.254.30.83",
+                            "fe80::3145:98c1:4f1c:6335",
+                            "169.254.50.69",
+                            "fe80::64e1:c8dd:5356:c175",
+                            "10.6.9.15",
+                            "fe80::c973:d583:c0f6:30dc",
+                            "192.168.137.1"
+                        ],
+                        "name": "rutu",
+                        "id": "0c3d8327-75c7-4af9-a536-dd6fdc236ef1",
+                        "mac": [
+                            "00-FF-EE-C8-47-CB",
+                            "30-89-4A-CC-0C-FE",
+                            "30-89-4A-CC-0C-FF",
+                            "32-89-4A-CC-0C-FE"
+                        ],
+                        "architecture": "x86_64"
+                    },
+                    "event": {
+                        "ingested": "2025-04-09T05:14:29.536296700Z",
+                        "code": "1",
+                        "provider": "Microsoft-Windows-Sysmon",
+                        "created": "2025-04-09T05:14:22.495Z",
+                        "kind": "event",
+                        "module": "sysmon",
+                        "action": "Process creation",
+                        "category": [
+                            "process"
+                        ],
+                        "type": [
+                            "start"
+                        ]
+                    },
+                    "message": "Process Create:\nRuleName: -\nUtcTime: 2025-04-09 05:14:20.486\nProcessGuid: {0c3d8327-022c-67f6-d854-000000001300}\nProcessId: 2268\nImage: C:\\Windows\\System32\\sppsvc.exe\nFileVersion: 10.0.26100.3624 (WinBuild.160101.0800)\nDescription: Microsoft Software Protection Platform Service\nProduct: Microsoft\u00ae Windows\u00ae Operating System\nCompany: Microsoft Corporation\nOriginalFileName: sppsvc.exe\nCommandLine: C:\\WINDOWS\\system32\\sppsvc.exe\nCurrentDirectory: C:\\WINDOWS\nUser: NT AUTHORITY\\NETWORK SERVICE\nLogonGuid: {0c3d8327-125f-67e8-e403-000000000000}\nLogonId: 0x3E4\nTerminalSessionId: 0\nIntegrityLevel: System\nHashes: SHA256=664FF7AAA11ED91CE9538B8C7C25E8BFDCFD4AFC62014B0E30E599A128730476\nParentProcessGuid: {0c3d8327-125e-67e8-0b00-000000001300}\nParentProcessId: 1196\nParentImage: C:\\Windows\\System32\\services.exe\nParentCommandLine: C:\\WINDOWS\\system32\\services.exe\nParentUser: NT AUTHORITY\\SYSTEM",
+                    "user": {
+                        "domain": "NT AUTHORITY",
+                        "name": "NETWORK SERVICE",
+                        "id": "S-1-5-18"
+                    }
+                }
+            }
+        ]
+    }
+}
