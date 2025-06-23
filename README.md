@@ -34,3 +34,12 @@ This project leverages Graph Neural Networks (GNNs) to enhance threat detection 
 - Log indexing and querying using Elasticsearch.
 - GNN model for advanced threat detection and analysis.
 - Visualization of results using Kibana.
+
+
+## Setup Instructions
+
+### Prerequisites
+- Python 3.8+
+- Elasticsearch and Kibana
+- Git
+- Libraries: PyTorch, Flask, Pandas, Matplotlib
