@@ -43,3 +43,9 @@ This project leverages Graph Neural Networks (GNNs) to enhance threat detection 
 - Elasticsearch and Kibana
 - Git
 - Libraries: PyTorch, Flask, Pandas, Matplotlib
+
+
+## Screenshots
+![Workflow Diagram](GNN/project_flow.jpg)
+*Figure: Workflow of the project.*
+
