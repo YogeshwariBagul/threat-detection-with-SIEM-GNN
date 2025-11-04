@@ -46,6 +46,8 @@ This project leverages Graph Neural Networks (GNNs) to enhance threat detection 
 
 
 ## Screenshots
-![Image](https://github.com/user-attachments/assets/da609bac-ef21-4396-9289-e6794ed02033)
-*Figure: Workflow of the project.*
-
+<p align="center">
+  <img src="d9db1db3-a3b9-44ee-b5d3-2d4d7df9e81c.png" alt="Workflow Diagram" width="400"/>
+  <br>
+  <em>Figure: Workflow of the project</em>
+</p>
